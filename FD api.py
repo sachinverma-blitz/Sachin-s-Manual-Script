@@ -12,7 +12,9 @@ HEADERS = {"Content-Type": "application/json"}
 
 # 🔹 BULK DATA
 awb_user_pairs =[
-  {"awb": "NBG764306728", "userId": 554}
+  {"awb": "GS2472741452", "userId": 753},
+  {"awb": "GS5395416781", "userId": 753},
+  {"awb": "GS5407447440", "userId": 168}
 ]
 def send_update(awb, user_id):
     payload = [

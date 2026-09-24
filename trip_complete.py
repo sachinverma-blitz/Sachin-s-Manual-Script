@@ -3,7 +3,7 @@ import requests
 import time
 
 # Load Excel file
-file_path = "Scripts/query_result_2026-05-10T13_26_28.671114356Z.xlsx"
+file_path = "query_result_2026-09-03T08_25_20.233787726Z.xlsx"
 df = pd.read_excel(file_path)
 
 # Normalize column names

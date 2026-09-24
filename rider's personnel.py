@@ -5,7 +5,7 @@ def get_bank_details(application_id):
     url = "https://0fs16zlyvk.execute-api.ap-south-1.amazonaws.com/V1/KYC/RIder_bankdetails"
 
     params = {
-        "application_id": application_id
+        "applicationId": application_id
     }
 
     try:
@@ -20,6 +20,8 @@ def get_bank_details(application_id):
             'accountNumber': data.get('accountNumber'),
             'ifsc': data.get('ifsc'),
             'dlNumber': data.get('dlNumber'),
+            'maskedAadhaarNumber': data.get('maskedAadhaarNumber'),
+            'eAadhaarPdfUrl': data.get('eAadhaarPdfUrl'),
             'panNumber': data.get('panNumber'),
             'error': None
         }
@@ -31,6 +33,8 @@ def get_bank_details(application_id):
             'accountNumber': None,
             'ifsc': None,
             'dlNumber': None,
+            'maskedAadhaarNumber': None,
+            'eAadhaarPdfUrl': None,
             'panNumber': None,
             'error': str(e)
         }
@@ -198,12 +202,17 @@ application_ids =[
     # add remaining IDs here
 
 
-results = [get_bank_details(app_id) for app_id in application_ids]
+def main():
+    results = [get_bank_details(app_id) for app_id in application_ids]
 
-df = pd.DataFrame(results)
+    df = pd.DataFrame(results)
 
-# Save to Excel
-output_file = "bank_details3.xlsx"
-df.to_excel(output_file, index=False)
+    # Save to Excel
+    output_file = "bank_details3.xlsx"
+    df.to_excel(output_file, index=False)
 
-print(f"\n✅ Excel file saved as: {output_file}")
+    print(f"\n✅ Excel file saved as: {output_file}")
+
+
+if __name__ == "__main__":
+    main()

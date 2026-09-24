@@ -12,7 +12,7 @@ HEADERS = {"Content-Type": "application/json"}
 
 # --- INPUT ---
 awb_user_pairs =[
-  {"awb": "GS1587806045", "userId": 586}
+  {"awb": "BZNYB3719647", "userId": 738}
 ]
 # add more pairs here
 

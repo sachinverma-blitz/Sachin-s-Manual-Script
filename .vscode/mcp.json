@@ -1,0 +1,9 @@
+{
+	"servers": {
+		"metabase": {
+			"url": "https://metabase.blitznow.in/api/mcp",
+			"type": "http"
+		}
+	},
+	"inputs": []
+}

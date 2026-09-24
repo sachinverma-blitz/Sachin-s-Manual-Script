@@ -1,0 +1,12 @@
+.DS_Store
+__pycache__/
+.pycache/
+*.pyc
+.venv/
+
+# contains a live API key - do not commit
+claude.py
+
+# raw PII exports from Metabase queries - do not commit
+query_result_*.xlsx
+rider_ticket_noise_analysis.pdf

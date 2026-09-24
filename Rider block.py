@@ -4,7 +4,7 @@ import time
 API_URL = "https://0fs16zlyvk.execute-api.ap-south-1.amazonaws.com/V1/KYC/personnel_status"
 
 HEADERS = {
-    "node_id": "118",
+    "node_id": "310",
     "Content-Type": "application/json",
     "Name": "Sachin"
 }
@@ -13,14 +13,24 @@ HEADERS = {
 rider_ids = [
 
 
-26368
+
+ 24127,
+  25370,
+  41928,
+  39928,
+  40253,
+  41722,
+  24863,
+  27086
+
+
 ]
 
 for rider_id in rider_ids:
     payload = {
         "riderId": [rider_id],
         "status": "BLACKLISTED",   # 🔴 changed here
-        "reason": "Disciplinary issue"
+        "reason": "Defaulters"
     }
 
     try:
@@ -31,7 +41,7 @@ for rider_id in rider_ids:
         print(f"Response: {response.text}")
         print("-" * 50)
 
-        time.sleep(1)
+        time.sleep(0.00001)
 
     except Exception as e:
         print(f"Error for Rider {rider_id}: {e}")

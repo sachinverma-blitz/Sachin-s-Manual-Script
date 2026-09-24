@@ -3,7 +3,7 @@ import requests
 import time
 
 # File path
-EXCEL_PATH = "Scripts/query_result_2026-05-29T06_40_19.058010237Z.xlsx"
+EXCEL_PATH = "query_result_2026-09-24T07_58_14.346025088Z.xlsx"
 
 # APIs
 PICKUP_API = "https://0fs16zlyvk.execute-api.ap-south-1.amazonaws.com/V1/sarathy/Pickup_task"

@@ -3,13 +3,13 @@ import json
 import time
 
 node_ids = [
-116
+388
  
 ]
-CONFIG_VALUE = "false"
-CONFIG_FIELD = "disable"
+CONFIG_VALUE = True
+CONFIG_FIELD = "isPodVerificationEnabled"
 
-# base_url = "https://0fs16zlyvk.execute-api.ap-south-1.amazonaws.com/V1/sarathy/Getupdatenodedata"
+# base_url = "https://0fs16zlyvk.execute-api.ap-south-1.amazonaws.com/V1/sarathy/get_update_node"
 base_url = "https://0fs16zlyvk.execute-api.ap-south-1.amazonaws.com/V1/node/create"
 NODE_API_URL = base_url
 
@@ -55,4 +55,4 @@ for node_id in node_ids:
 		failed_ids.append(node_id)
 		continue
 
-	time.sleep(1)
+	time.sleep(0.001)

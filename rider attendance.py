@@ -6,9 +6,9 @@ BASE_URL = "https://0fs16zlyvk.execute-api.ap-south-1.amazonaws.com/V1/KYC/Rider
 
 # Rider IDs (cleaned list)
 rider_ids = [
+31291,29704,29708,24724,25964,28239,25958,26180,26170
 
-29501,
-29215
+
 
 ]
 

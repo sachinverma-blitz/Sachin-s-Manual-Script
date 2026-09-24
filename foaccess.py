@@ -6,13 +6,13 @@ import time
 # =========================
 # CONFIGURATION
 # =========================
-EXCEL_FILE = "Scripts/query_result_2026-05-08T15_34_26.302451827Z.xlsx"
+EXCEL_FILE = "query_result_2026-08-06T09_48_01.690265546Z.xlsx"
 API_URL = "https://0fs16zlyvk.execute-api.ap-south-1.amazonaws.com/V1/Auth/FO_Access"
 
 # User Details (same for all rows)
-PHONE = "+917892325692"
-NAME = "Hemanth"
-GROUP_IDS = ["Team Lead"]
+PHONE = "+916362485920"
+NAME = "Devansh"
+GROUP_IDS = ["City Head"]
 IS_MFA_REQUIRED = False
 
 HEADERS = {
@@ -67,6 +67,6 @@ for index, row in df.iterrows():
         print(f"Error for OrgID {org_id} | Alias {alias}: {e}")
 
     # Small delay to avoid throttling
-    time.sleep(0.5)
+    time.sleep(0.0001)
 
 print("Bulk process completed.")

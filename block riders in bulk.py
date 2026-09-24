@@ -4,17 +4,15 @@ import time
 URL = "https://0fs16zlyvk.execute-api.ap-south-1.amazonaws.com/V1/KYC/personnel_status"
 
 data =[ 
-    {"rider_id":"25369","node_id":"125"},
-{"rider_id":"27172","node_id":"311"},
-{"rider_id":"25387","node_id":"84"},
-{"rider_id":"27868","node_id":"125"},
-{"rider_id":"28169","node_id":"84"},
-{"rider_id":"27016","node_id":"125"},
-{"rider_id":"25028","node_id":"84"},
-{"rider_id":"28036","node_id":"311"},
-{"rider_id":"27781","node_id":"125"},
-{"rider_id":"27312","node_id":"325"},
-{"rider_id":"24411","node_id":"84"}
+   {"rider_id":"24020","node_id":"159"},
+{"rider_id":"19127","node_id":"159"},
+{"rider_id":"23665","node_id":"159"},
+{"rider_id":"13566","node_id":"159"},
+{"rider_id":"19671","node_id":"159"},
+{"rider_id":"15556","node_id":"159"},
+{"rider_id":"15091","node_id":"159"},
+{"rider_id":"29985","node_id":"159"},
+{"rider_id":"24765","node_id":"159"}
 ]
 
 for row in data:
@@ -28,7 +26,7 @@ for row in data:
     payload = {
         "riderId": [row["rider_id"]],
         "status": "BLACKLISTED",
-        "reason": "fraud theft cases"
+        "reason": "Behavioural Issues"
     }
 
     try:
